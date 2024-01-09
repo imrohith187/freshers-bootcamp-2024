@@ -1,7 +1,11 @@
-def search (string, strArray):
-    for j in range(len(strArray)):
-        if (strArray[j]==(string)):
-            return strArray[j]+" is found"
-    return "String not found"
-strArray=["one","two","three"]
-print(search("one",strArray))
+def filter(arr,target):
+    for val in arr:
+        if(val==target):
+            return display_result(val)
+        return False
+
+def display_result(val):
+    print(val+" is Found")
+    
+arr = ["one","two","three"]
+filter(arr,"one")
