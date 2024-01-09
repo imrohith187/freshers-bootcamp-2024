@@ -1,6 +1,7 @@
-function search (str, strArray) {
-    for (var j=0; j<strArray.length; j++) {
-        if (strArray[j].match(str)) return j;
-    }
-    return -1;
-}
+def search (string, strArray):
+    for j in range(len(strArray)):
+        if (strArray[j]==(string)):
+            return strArray[j]+" is found"
+    return "String not found"
+strArray=["one","two","three"]
+print(search("one",strArray))
