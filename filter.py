@@ -7,7 +7,7 @@ def filter(arr,target):
 def display_result_on_terminal(val):
     if(val==False):
         print("Element not Found")
-        return 0
+        return False
     print(val+" is Found")
     
 arr = ["one","two","three"]
