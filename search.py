@@ -1,9 +1,6 @@
-def search(x,arr):
-    for i in range(len(arr)):
-        if(arr[i]==x):
-            print("Element Found")
-            break
-    return 0
-    
-arr = [1,2,3,4,5]
-search(6,arr)
+function search (str, strArray) {
+    for (var j=0; j<strArray.length; j++) {
+        if (strArray[j].match(str)) return j;
+    }
+    return -1;
+}
