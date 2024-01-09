@@ -1,10 +1,10 @@
 def filter(arr,target):
     for val in arr:
         if(val==target):
-            return display_result(val)
-        return display_result(False)
+            return display_result_on_terminal(val)
+        return display_result_on_terminal(False)
 
-def display_result(val):
+def display_result_on_terminal(val):
     if(val==False):
         print("Element not Found")
         return 0
@@ -12,3 +12,5 @@ def display_result(val):
     
 arr = ["one","two","three"]
 filter(arr,"one")
+
+
