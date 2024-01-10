@@ -4,7 +4,7 @@ class ConsoleDisplayController{
     private ArrayList<String> result;
     
     public void setContent (ArrayList<String>msg){
-        this.content = msg;
+        this.result = msg;
     }
     
     public void display(){
@@ -31,7 +31,7 @@ class StringListFilterController{
     LengthAsStrategy predicate = new LengthAsStrategy();
     public ArrayList<String> filter(ArrayList<String> strlist){
         ArrayList<String> filteredArr = new ArrayList<>();
-        predicate.setLengthOfChar(4);
+        predicate.setLengthOfChar(6);
         for(String word:strlist){
             if(predicate.invoke(word))filteredArr.add(word);
         }
@@ -41,7 +41,7 @@ class StringListFilterController{
 
 public class Main{
     public static void main(String args[]){
-        ArrayList<String> = new ArrayList<>();
+        ArrayList<String> arr = new ArrayList<>();
         
         arr.add("one");
         arr.add("two");
