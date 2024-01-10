@@ -1,4 +1,4 @@
-class CharLen:
+class charLen:
     def __init__(self,arr):
         self.arr=arr
     
@@ -32,8 +32,8 @@ class display:
 
 
 strarr = ["one","two","three"]
-CharLenObj = CharLen(strarr)
-fourCharFiltered = CharLenObj.isLessThanFourChar(CharLenObj.arr)
+charLenObj = charLen(strarr)
+fourCharFiltered = charLenObj.isLessThanFourChar(charLenObj.arr)
 filterObj = filter(fourCharFiltered,"two")
 filterResult = filterObj.filterStrings(filterObj.arr,filterObj.target)
 displayObj = display(filterResult)
